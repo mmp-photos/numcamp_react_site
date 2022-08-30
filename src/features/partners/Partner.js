@@ -1,0 +1,19 @@
+// FUNCTION TO CREAT THE PARTNER ELEMENT //
+const Partner = ( { partner }) => {
+    if(partner){
+        const { name, image, description } = partner;
+        return (
+            <>
+                <img src={ image } alt={ name } style={{ width: '150px' }} />
+                <div className='m-4'>
+                <h5 className='fw-bold'>{name}</h5>
+                    {description}
+                </div>
+            </>
+        )
+    }
+    return null;
+}
+
+// EXPORT STATEMENT //
+export default Partner;
